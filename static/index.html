@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Databox Twitter Sentiment Analysis</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>Twitter Sentiment Analysis</h1>
+		<p>
+			Score: <span id="score"></span>
+			<br>
+			Comparative: <span id="comparative"></span>
+			<br>
+			Words:
+			<table border="1">
+				<tr>
+					<th>Positive</th>
+					<th>Negative</th>
+				</tr>
+				<tr>
+					<td id="positive" valign="top"></td>
+					<td id="negative" valign="top"></td>
+				</tr>
+			<table>
+		</p>
+		<script>
+			$(document).ready(function() {
+				$.get('sentiment', {}, function(data) {
+					$('#score').text(data.score);
+					$('#comparative').text(data.comparative);
+					for (var i = 0, len = data.positive.length; i < len; ++i)
+						$('<div></div>').text(data.positive[i]).appendTo('#positive');
+					for (var i = 0, len = data.negative.length; i < len; ++i)
+						$('<div></div>').text(data.negative[i]).appendTo('#negative');
+				});
+			});
+		</script>
+	</body>
+</html>

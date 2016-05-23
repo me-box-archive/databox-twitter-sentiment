@@ -1,0 +1,39 @@
+{
+	"manifest-version": 1,
+
+	"name": "databox-twitter-sentiment",
+	"version": "0.1.0",
+
+	"description": "A simple Databox app that performs sentiment analysis on your Twitter timeline",
+	"author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
+	"license": "MIT",
+
+	"tags": [
+		"databox",
+		"twitter",
+		"sentiment",
+		"analysis",
+		"word",
+		"cloud"
+	],
+
+	"homepage": "https://github.com/yousefamar/databox-twitter-sentiment",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yousefamar/databox-twitter-sentiment.git"
+	},
+
+	"driver-permissions": [
+		{
+			"name": "databox-twitter-driver",
+			"required": true,
+			"benefits": "[markdown-formatted description]",
+			"risks": "[markdown-formatted description]"
+		}
+	],
+
+	"optional-requirements": [
+	],
+	"resource-requirements": {
+	}
+}

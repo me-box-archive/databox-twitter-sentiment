@@ -1,0 +1,35 @@
+{
+  "name": "databox-twitter-sentiment",
+  "version": "0.1.0",
+  "description": "A simple Databox app that performs sentiment analysis on your Twitter timeline",
+  "scripts": {
+    "start": "lsc server.ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yousefamar/databox-twitter-sentiment.git"
+  },
+  "keywords": [
+    "docker",
+    "databox",
+    "personal",
+    "data",
+    "twitter",
+    "sentiment",
+    "analysis"
+  ],
+  "author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yousefamar/databox-twitter-sentiment/issues"
+  },
+  "homepage": "https://github.com/yousefamar/databox-twitter-sentiment#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "livescript": "^1.4.0",
+    "request": "^2.69.0",
+    "sentiment": "^1.0.6"
+  }
+}
