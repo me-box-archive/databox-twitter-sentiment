@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "A simple Databox app that performs sentiment analysis on your Twitter timeline",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lsc server.ls",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "docker build -t databox-twitter-sentiment . && docker tag databox-twitter-sentiment amar.io:5000/databox-twitter-sentiment && docker push amar.io:5000/databox-twitter-sentiment"
   },
   "repository": {
     "type": "git",
